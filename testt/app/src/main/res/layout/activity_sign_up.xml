@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    tools:context=".SignUp_Activity">
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Sign Up"
+            android:textSize="45sp" />
+        <EditText
+            android:id="@+id/idEDTphome_Register"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/overlayoutbg"
+            android:hint="@string/phone_number"
+            android:textSize="25sp"
+            android:inputType="number"
+            android:autofillHints="phone" />
+        <EditText
+            android:id="@+id/idEDTusername_Register"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/overlayoutbg"
+            android:hint="Username"
+            android:textSize="25sp"
+            android:inputType="textPersonName"
+            android:autofillHints="name" />
+        <EditText
+            android:id="@+id/idEDTpassword_Register"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/overlayoutbg"
+            android:hint="@string/password"
+            android:textSize="25sp"
+            android:inputType="textPassword"
+            android:autofillHints="password" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/idBTNsignUp_Signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:background="@drawable/button_signin"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

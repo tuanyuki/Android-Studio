@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailsFoods">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/idIMGdetail_Foods"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/my_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/foods" />
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fabDetails_Foods"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="28dp"-->
+<!--        android:src="@drawable/ic_baseline_shopping_cart_24"-->
+<!--        app:backgroundTint="@color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.475"-->
+<!--        tools:ignore="SpeakableTextPresentCheck"-->
+<!--        android:contentDescription="@string/buy" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idIMGdetail_Foods">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/color_cardview_text">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/idTVnameDetails_Foods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:text="@string/chicken" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/idTVpriceDetails_Foods"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:text="@string/_10_00"/>
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:text="@string/usd"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/idBTNsubDetails_Foods"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/button_sub"
+                        android:minHeight="48dp"
+                        android:background = "@drawable/button_signin"
+                        android:src="@drawable/ic_baseline_remove_24" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/idBTNquantityDetails_Foods"
+                        android:layout_width="60dp"
+                        android:textSize="20sp"
+                        android:padding="5dp"
+                        android:layout_height="wrap_content"
+                        android:background = "#14B0A1"
+                        android:text="10" />
+
+                    <ImageButton
+                        android:id="@+id/idBTNaddDetails_Foods"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/button_add"
+                        android:minHeight="48dp"
+                        android:background = "@drawable/button_signin"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/color_cardview_text">
+            <TextView
+                android:id="@+id/idComment"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tuan_anh_la_so_1"
+                android:textSize="20sp"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
